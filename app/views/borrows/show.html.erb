@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Issue dete:</strong>
+  <%= @borrow.issue_dete %>
+</p>
+
+<p>
+  <strong>Returune dete:</strong>
+  <%= @borrow.returune_dete %>
+</p>
+
+<p>
+  <strong>Book no:</strong>
+  <%= @borrow.book_no %>
+</p>
+
+<p>
+  <strong>Member:</strong>
+  <%= @borrow.member %>
+</p>
+
+<p>
+  <strong>Fine type:</strong>
+  <%= @borrow.fine_type %>
+</p>
+
+<%= link_to 'Edit', edit_borrow_path(@borrow) %> |
+<%= link_to 'Back', borrows_path %>

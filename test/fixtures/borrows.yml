@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  issue_dete: MyString
+  returune_dete: MyString
+  book_no_id: 
+  member_id: 
+  fine_type_id: 
+
+two:
+  issue_dete: MyString
+  returune_dete: MyString
+  book_no_id: 
+  member_id: 
+  fine_type_id: 

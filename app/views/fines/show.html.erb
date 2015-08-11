@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fine type:</strong>
+  <%= @fine.fine_type %>
+</p>
+
+<p>
+  <strong>Fine amunt:</strong>
+  <%= @fine.fine_amunt %>
+</p>
+
+<%= link_to 'Edit', edit_fine_path(@fine) %> |
+<%= link_to 'Back', fines_path %>

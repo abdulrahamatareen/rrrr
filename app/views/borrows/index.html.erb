@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Borrows</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Issue dete</th>
+      <th>Returune dete</th>
+      <th>Book no</th>
+      <th>Member</th>
+      <th>Fine type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @borrows.each do |borrow| %>
+      <tr>
+        <td><%= borrow.issue_dete %></td>
+        <td><%= borrow.returune_dete %></td>
+        <td><%= borrow.book_no %></td>
+        <td><%= borrow.member %></td>
+        <td><%= borrow.fine_type %></td>
+        <td><%= link_to 'Show', borrow %></td>
+        <td><%= link_to 'Edit', edit_borrow_path(borrow) %></td>
+        <td><%= link_to 'Destroy', borrow, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Borrow', new_borrow_path %>
